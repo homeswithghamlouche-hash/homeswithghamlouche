@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homes for Sale in Dearborn & Dearborn Heights — homeswithghamlouche</title>
+<meta name="description" content="Search current listings across Dearborn and Dearborn Heights, MI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">homes<span>with</span>ghamlouche</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="valuation.html">Home Value</a></li>
+      <li><a href="listings.html" class="active">Listings</a></li>
+      <li><a href="neighborhoods.html">Neighborhoods</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:3135781019" class="nav-phone">313-578-1019</a>
+      <a href="contact.html" class="btn btn-primary">Get in touch</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" style="padding-bottom:40px;">
+  <div class="plat-field" data-seed="21"></div>
+  <div class="hero-inner" style="padding-bottom:40px;">
+    <span class="eyebrow">Current inventory</span>
+    <h1 style="max-width:20ch; font-size:clamp(2.2rem,4vw,3.4rem);">Homes for sale across Dearborn &amp; Dearborn Heights</h1>
+    <p class="lede">Sample listings shown below — this page is built to connect directly to the MLS feed once IDX access is set up through the brokerage.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+
+    <div class="filter-bar">
+      <select id="filter-city">
+        <option value="all">All cities</option>
+        <option value="Dearborn">Dearborn</option>
+        <option value="Dearborn Heights">Dearborn Heights</option>
+      </select>
+      <select id="filter-price">
+        <option value="">Any price</option>
+        <option value="200000">Under $200k</option>
+        <option value="250000">Under $250k</option>
+        <option value="300000">Under $300k</option>
+        <option value="400000">Under $400k</option>
+      </select>
+      <select id="filter-beds">
+        <option value="">Any bedrooms</option>
+        <option value="2">2+</option>
+        <option value="3">3+</option>
+        <option value="4">4+</option>
+      </select>
+      <span style="margin-left:auto; align-self:center; font-family:var(--font-mono); font-size:0.82rem; color:var(--slate);" id="result-count"></span>
+    </div>
+
+    <div class="grid-3" id="listing-grid"></div>
+  </div>
+</section>
+
+<section class="section-brass">
+  <div class="wrap">
+    <div class="form-panel" style="max-width:640px; margin:0 auto; text-align:center;">
+      <span class="eyebrow" style="justify-content:center;">Don't see the right fit?</span>
+      <h2 class="mt-0">Tell me what you're looking for</h2>
+      <p style="margin-top:0.8em;">New listings in Dearborn and Dearborn Heights move fast — often before they're widely posted. Let me know your criteria and I'll reach out when something matches.</p>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:1.2rem;">Set up a search</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">homes<span style="color:var(--brick);">with</span>ghamlouche</div>
+        <p style="max-width:32ch;">Hassan Ghamlouche, Realtor<br>Pro Realty Group — Associate Broker Billy Johair</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="valuation.html">Home Value</a></li>
+          <li><a href="listings.html">Listings</a></li>
+          <li><a href="neighborhoods.html">Neighborhoods</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:3135781019">313-578-1019</a></li>
+          <li><a href="mailto:homeswithghamlouche@gmail.com">homeswithghamlouche@gmail.com</a></li>
+          <li>Dearborn, MI</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hassan Ghamlouche. Licensed real estate agent, Pro Realty Group.</span>
+      <span>Equal Housing Opportunity</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

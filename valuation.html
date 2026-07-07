@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What's My Home Worth? — homeswithghamlouche</title>
+<meta name="description" content="Get a free home value estimate for your property in Dearborn or Dearborn Heights, MI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">homes<span>with</span>ghamlouche</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="valuation.html" class="active">Home Value</a></li>
+      <li><a href="listings.html">Listings</a></li>
+      <li><a href="neighborhoods.html">Neighborhoods</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:3135781019" class="nav-phone">313-578-1019</a>
+      <a href="contact.html" class="btn btn-primary">Get in touch</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" style="padding-bottom:0;">
+  <div class="plat-field" data-seed="11"></div>
+  <div class="hero-inner" style="padding-bottom:60px;">
+    <span class="eyebrow">Free · 45 seconds · No obligation</span>
+    <h1 style="max-width:18ch;">What's your Dearborn-area home actually worth right now?</h1>
+    <p class="lede">Answer four quick questions. I'll give you a real price range built around what's actually closing nearby — then follow up personally, not with a robocall.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap grid-2" style="align-items:flex-start;">
+
+    <div class="form-panel">
+      <form id="valuation-form" data-lead-form data-form-type="valuation" data-success-target="valuation-lead-success">
+        <input type="text" name="company" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;" aria-hidden="true">
+        <div class="field">
+          <label for="val-address">Property address</label>
+          <input type="text" id="val-address" name="address" placeholder="1234 Example St" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="val-city">City</label>
+            <select id="val-city" name="city" required>
+              <option value="Dearborn">Dearborn</option>
+              <option value="Dearborn Heights">Dearborn Heights</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="val-sqft">Approx. square footage</label>
+            <input type="number" id="val-sqft" name="sqft" placeholder="1800" min="400" required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="val-beds">Bedrooms</label>
+            <select id="val-beds" name="beds" required>
+              <option value="2">2</option>
+              <option value="3" selected>3</option>
+              <option value="4">4</option>
+              <option value="5">5+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="val-condition">Condition</label>
+            <select id="val-condition" name="condition" required>
+              <option value="updated">Recently updated</option>
+              <option value="average" selected>Average / well-kept</option>
+              <option value="dated">Needs work</option>
+            </select>
+          </div>
+        </div>
+
+        <hr class="divider" style="margin:1.6rem 0;">
+
+        <div class="field">
+          <label for="val-name">Your name</label>
+          <input type="text" id="val-name" name="name" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="val-email">Email</label>
+            <input type="email" id="val-email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="val-phone">Phone</label>
+            <input type="tel" id="val-phone" name="phone" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Get my home value</button>
+        <p class="form-note">Your information goes directly to Hassan — not a national referral network. Expect a personal follow-up within one business day.</p>
+      </form>
+
+      <div class="form-success" id="valuation-lead-success">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12L10 17L19 8" stroke="currentColor" stroke-width="2"/></svg></div>
+        <h3>Thanks — I've got it.</h3>
+        <p style="margin-top:0.6em;">I'll follow up personally to walk through your estimate and answer any questions.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="card" id="valuation-result">
+        <span class="eyebrow">Your estimate</span>
+        <h3>Estimated value range</h3>
+        <div style="font-family:var(--font-mono); font-size:2rem; color:var(--brick); margin:0.4em 0 0.6em;" id="val-estimate">—</div>
+        <p>This range is a starting-point estimate based on general local pricing trends — not a full comparative market analysis. Submit the form and I'll refine this with an actual walk-through of recent sales on your specific block.</p>
+      </div>
+      <div class="card" style="margin-top:1.6rem; background:var(--paper);">
+        <div class="lot-tag">Why estimates vary</div>
+        <p>Automated home value tools (including this one) can miss things like a finished basement, a new roof, or a busy street corner. That's exactly why the follow-up conversation matters more than the number itself.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="wrap grid-3">
+    <div>
+      <div class="icon-box" style="border-color:var(--brass-soft); color:var(--brass-soft);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 12L12 4L21 12" stroke="currentColor" stroke-width="1.6"/><path d="M6 10V20H18V10" stroke="currentColor" stroke-width="1.6"/></svg>
+      </div>
+      <h3 style="color:var(--paper-card);">Local comps, not a nationwide model</h3>
+      <p>Your estimate gets refined using homes that actually sold near you in the last 90 days — not a national average.</p>
+    </div>
+    <div>
+      <div class="icon-box" style="border-color:var(--brass-soft); color:var(--brass-soft);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.6"/></svg>
+      </div>
+      <h3 style="color:var(--paper-card);">No pressure, no timeline</h3>
+      <p>Plenty of people who use this tool aren't selling for another year. That's fine — I'll check back when it makes sense, not before.</p>
+    </div>
+    <div>
+      <div class="icon-box" style="border-color:var(--brass-soft); color:var(--brass-soft);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 20L20 4M4 4L20 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" style="display:none"/><path d="M12 2L4 6V12C4 17 7.5 20.7 12 22C16.5 20.7 20 17 20 12V6L12 2Z" stroke="currentColor" stroke-width="1.6"/></svg>
+      </div>
+      <h3 style="color:var(--paper-card);">Straight to a real person</h3>
+      <p>This goes to my phone and inbox directly — homeswithghamlouche@gmail.com — not a call center reading from a script.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">homes<span style="color:var(--brick);">with</span>ghamlouche</div>
+        <p style="max-width:32ch;">Hassan Ghamlouche, Realtor<br>Pro Realty Group — Associate Broker Billy Johair</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="valuation.html">Home Value</a></li>
+          <li><a href="listings.html">Listings</a></li>
+          <li><a href="neighborhoods.html">Neighborhoods</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:3135781019">313-578-1019</a></li>
+          <li><a href="mailto:homeswithghamlouche@gmail.com">homeswithghamlouche@gmail.com</a></li>
+          <li>Dearborn, MI</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hassan Ghamlouche. Licensed real estate agent, Pro Realty Group.</span>
+      <span>Equal Housing Opportunity</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
