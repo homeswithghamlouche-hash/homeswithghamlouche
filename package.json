@@ -1,9 +1,0 @@
-{
-  "name": "homeswithghamlouche-website",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Website and lead-capture backend for homeswithghamlouche real estate",
-  "engines": {
-    "node": ">=18"
-  }
-}
